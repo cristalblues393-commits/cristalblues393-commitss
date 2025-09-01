@@ -41,5 +41,3 @@
 <p align="left">♡ ~ turning ideas into code, gently ~ ♡</p>
 
 ###
-
-<div  align="center">(https://github.com/user-attachments/assets/42080819-2947-4174-9515-3f411418242d)
