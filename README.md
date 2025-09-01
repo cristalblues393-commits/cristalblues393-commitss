@@ -43,5 +43,4 @@
 ###
 
 <div  align="center">
-
-![5b8203580dad3bbe842f3320143c78c5.jpg](https://github.com/user-attachments/assets/dd4d2b6e-aedb-45a2-9683-b48b5145cdf8)
+![GIF_20240810_194403_388.gif"  />
