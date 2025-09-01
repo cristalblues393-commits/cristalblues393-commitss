@@ -1,13 +1,29 @@
-# Clone this project
-$ git clone https://github.com/maurodesouza/profile-readme-generator
+name: Generate Snake Animation
 
-# Access
-$ cd profile-readme-generator
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs every day at midnight UTC
+  workflow_dispatch: # Allows you to run it manually
 
-# Install dependencies
-$ yarn
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-# Run the project
-$ yarn dev
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: cristalblues393-commits
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-# The server will initialize in the <http://localhost:3000>
+      - name: Push result
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git commit -m "Update snake animation"
+          git push
