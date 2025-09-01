@@ -1,1 +1,13 @@
-![Snake animation](https://github.com/cristalblues393-commits/cristalblues393-commits/blob/output/github-contribution-grid-snake.svg)
+# Clone this project
+$ git clone https://github.com/maurodesouza/profile-readme-generator
+
+# Access
+$ cd profile-readme-generator
+
+# Install dependencies
+$ yarn
+
+# Run the project
+$ yarn dev
+
+# The server will initialize in the <http://localhost:3000>
